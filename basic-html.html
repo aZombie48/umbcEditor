@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style type="text/css">
+      #editor {
+        width:80%;
+        margin:auto;
+      }
+      .left {
+        float:left;
+        width:50%;
+      }
+      .widget img {
+        width:100%;
+      }
+      .widget {
+        line-height: 1.5em;
+        font-family: Arial;
+      }
+      .toolbar {
+        background: black;
+        color:white;
+        display: block;
+        height:50px;
+        position: absolute;
+        line-height: 50px;
+        border-radius: 10px;
+      }
+      .toolbar * {
+        margin:0px 10px;
+        font-size: 20px;
+        display: inline;
+      }
+      .toolbar *:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page content -->
+    <div id="editor">
+      <h2>Title</h2>
+      <p contenteditable="true" class="widget focus">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra, lorem a consectetur dapibus, ligula dolor semper dolor, non accumsan nulla mauris eu tortor. Cras aliquet lorem urna, ac facilisis urna rhoncus in. Aliquam vitae sem laoreet, consectetur libero sed, egestas sem. Proin eu ornare nibh. Nam hendrerit eleifend massa malesuada porta. Aliquam lobortis venenatis metus at dictum. Integer feugiat dapibus pharetra. Donec facilisis tincidunt semper. Suspendisse ullamcorper venenatis sapien ut fringilla. Suspendisse iaculis felis eget semper aliquet.
+      In convallis est lectus, in consectetur mauris egestas in. Nunc neque turpis, tempor et augue nec, dictum malesuada quam. Sed hendrerit purus nec cursus rhoncus. Nulla nec dui tempus, aliquam neque eget, iaculis eros. Ut lacinia suscipit massa, eu pharetra leo pellentesque ac. Integer mollis sollicitudin nulla eu mattis. Quisque vestibulum suscipit risus, id pulvinar risus imperdiet vel. Nulla semper vehicula nisi ut venenatis. Fusce bibendum bibendum mauris. Phasellus congue, sem vel malesuada interdum, nulla felis laoreet ipsum, at fringilla metus purus in urna. Vivamus massa elit, pulvinar in adipiscing vel, convallis in felis. Donec auctor leo eu leo malesuada laoreet. Etiam et orci sagittis, bibendum nulla at, faucibus erat. Etiam et nisi dui.</p>
+      <div class="widget left">
+        <img src="img.jpg" alt="My image">
+        <span class="caption">Caption here</span>
+      </div>
+      <p contenteditable="true" class="widget">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra, lorem a consectetur dapibus, ligula dolor semper dolor, non accumsan nulla mauris eu tortor. Cras aliquet lorem urna, ac facilisis urna rhoncus in. Aliquam vitae sem laoreet, consectetur libero sed, egestas sem. Proin eu ornare nibh. Nam hendrerit eleifend massa malesuada porta. Aliquam lobortis venenatis metus at dictum. Integer feugiat dapibus pharetra. Donec facilisis tincidunt semper. Suspendisse ullamcorper venenatis sapien ut fringilla. Suspendisse iaculis felis eget semper aliquet.
+      In convallis est lectus, in consectetur mauris egestas in. Nunc neque turpis, tempor et augue nec, dictum malesuada quam. Sed hendrerit purus nec cursus rhoncus. Nulla nec dui tempus, aliquam neque eget, iaculis eros. Ut lacinia suscipit massa, eu pharetra leo pellentesque ac. Integer mollis sollicitudin nulla eu mattis. Quisque vestibulum suscipit risus, id pulvinar risus imperdiet vel. Nulla semper vehicula nisi ut venenatis. Fusce bibendum bibendum mauris. Phasellus congue, sem vel malesuada interdum, nulla felis laoreet ipsum, at fringilla metus purus in urna. Vivamus massa elit, pulvinar in adipiscing vel, convallis in felis. Donec auctor leo eu leo malesuada laoreet. Etiam et orci sagittis, bibendum nulla at, faucibus erat. Etiam et nisi dui.</p>
+    </div>
+    <script type="text/javascript" src="editor.js"></script>
+    <script type="text/javascript" src="caret.js"></script>
+    <script type="text/javascript" src="plogic.js"></script>
+  </body>
+</html>
